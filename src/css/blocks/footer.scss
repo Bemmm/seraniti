@@ -1,0 +1,14 @@
+.footer{
+    padding: 40px;
+    text-align: center;
+    background-color: $lightgreen;
+    display: flex;
+    justify-content: center;
+    &__link{
+        margin: 0 50px;
+        img{
+            height:30px;
+        }
+    }
+
+}

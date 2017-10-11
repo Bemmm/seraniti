@@ -1,0 +1,155 @@
+.background {
+  // background: url('../images/1.jpg');
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 900px;
+  font-family: 'Roboto Condensed', sans-serif;
+  @media (min-width: 1000px) and (max-width:1260px) {
+    height: 700px;
+  }
+  @media screen and (max-width:1000px) {
+    height: 900px;
+  }
+  .subtittle {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    color: #fff;
+    font-size: 25px;
+    left: 10%;
+  }
+  .carousel-indicators {
+    li {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      bottom: 0px;
+      background-color: #fff;
+      margin: 0 5px;
+      &.active {
+        background-color: $lightgreen;
+      }
+    }
+  }
+  .carousel-inner {
+    height: 100%;
+    position: relative;
+    .carousel-item {
+      height: 100%;
+      img {
+        width: 100%;
+        @media screen and (max-width: 1000px) {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .flex-row {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    @media screen and (max-width: 992px) {
+      flex-direction: column !important;
+      align-items: center;
+      max-width: 100% !important;
+    }
+  }
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    &-logo {
+      img {
+        max-height: 150px;
+      }
+    }
+  }
+  &__slogan {
+    position: absolute;
+    left: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    padding-left: 10%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    bottom: 100px;
+    background: $darkgrey-opacity;
+    span {
+      color: $lightgreen;
+    }
+    @media screen and (max-width:992px) {
+      position: relative;
+      width: 100%;
+      bottom: 150px;
+      top: auto;
+      font-size: 25px;
+      text-align: center;
+      padding: 10px 20px;
+    }
+  }
+  &__contact {
+    max-width: 370px;
+    float: right;
+    &-header {
+      background-color: $black-opacity;
+      color: white;
+      font-size: 23px;
+      text-align: center;
+      padding: 10px;
+      span {
+        color: $lightgreen;
+      }
+      &:after {
+        content: '●●●●●●●●●●●●●●●●●';
+        color: white;
+        display: block;
+        font-size: 15px;
+        margin: 15px 0;
+        letter-spacing: 5px;
+      }
+    }
+    form {
+      background-color: $lightgreen-opacity;
+      text-align: center;
+      padding: 20px;
+      .wrapper {
+        margin-bottom: 20px;
+        input {
+          width: 100%;
+          padding: 10px 5px;
+          text-align: center;
+          color: black;
+          border: 0;
+        }
+        button {
+          width: 100%;
+          padding: 10px 5px;
+          text-align: center;
+          color: #fff;
+          background-color: black;
+          text-transform: uppercase;
+          border: 1px solid transparent;
+          font-weight: 600;
+          cursor: pointer;
+          &:hover {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            span {
+              color: #fff;
+            }
+          }
+          span {
+            color: $lightgreen;
+          }
+        }
+      }
+    }
+  }
+}

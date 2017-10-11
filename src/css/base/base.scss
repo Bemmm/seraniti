@@ -1,0 +1,40 @@
+.title {
+  font-size: 34px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Roboto Condensed', sans-serif;
+  &.white {
+    color: #fff;
+    &:after {
+      content: '●●●●●●●●●●●●●●●●●';
+      color: black;
+      display: block;
+      font-size: 15px;
+      margin: 15px 0;
+      letter-spacing: 5px;
+    }
+  }
+  &.green {
+    color: $lightgreen;
+    &:after {
+      content: '●●●●●●●●●●●●●●●●●';
+      color: black;
+      display: block;
+      font-size: 15px;
+      margin: 15px 0;
+      letter-spacing: 5px;
+    }
+  }
+  &.white-blue {
+    color: #fff;
+    &:after {
+      content: '●●●●●●●●●●●●●●●●●';
+      color: white;
+      display: block;
+      font-size: 15px;
+      margin: 15px 0;
+      letter-spacing: 5px;
+    }
+  }     
+}

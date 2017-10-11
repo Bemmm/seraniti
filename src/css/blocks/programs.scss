@@ -1,0 +1,49 @@
+.programs{
+    background-image: url('../images/programs.jpg');
+    padding: 25px 10px;
+    background-size: cover;
+    background-position: center center;
+    .title{
+        z-index: 1;
+        position: relative;
+        margin-bottom: 70px
+    }
+    &__content{
+        z-index: 1;
+        position: relative;
+        padding-bottom: 20px;
+        font-family: 'Roboto Condensed', sans-serif;        
+        &-item{
+            @media screen and (max-width:768px){
+                text-align: center !important;
+                margin: 20px 0;
+                padding: 10px !important;
+            }            
+            h3{
+                color: $text-black;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }            
+            p{
+                color:$text-black;
+                font-size: 22px;
+                line-height: 25px;
+                margin-bottom: 0;
+                font-weight: 300;
+            }
+        }
+
+    }
+    &__more{
+        font-size: 25px;
+        position: relative;
+        z-index: 1;
+        color:$lightgreen;
+        text-decoration: underline;
+        text-align: center;
+        display: block;
+        margin-top: 20px
+    }
+}
