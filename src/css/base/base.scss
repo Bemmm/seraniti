@@ -2,38 +2,41 @@
   font-size: 34px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   &.white {
     color: #fff;
     &:after {
-      content: '●●●●●●●●●●●●●●●●●';
+      content: '●●●●●●●●●●●●●●●●●●●●●●●';
       color: black;
       display: block;
-      font-size: 15px;
-      margin: 15px 0;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 20px;
       letter-spacing: 5px;
     }
   }
   &.green {
     color: $lightgreen;
     &:after {
-      content: '●●●●●●●●●●●●●●●●●';
+      content: '●●●●●●●●●●●●●●●●●●●●●●●';
       color: black;
       display: block;
-      font-size: 15px;
-      margin: 15px 0;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 20px;
       letter-spacing: 5px;
     }
   }
   &.white-blue {
     color: #fff;
     &:after {
-      content: '●●●●●●●●●●●●●●●●●';
+      content: '●●●●●●●●●●●●●●●●●●●●●●●';
       color: white;
       display: block;
-      font-size: 15px;
-      margin: 15px 0;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 20px;
       letter-spacing: 5px;
     }
   }     

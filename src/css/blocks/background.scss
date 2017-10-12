@@ -1,34 +1,69 @@
 .background {
   // background: url('../images/1.jpg');
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   position: relative;
-  height: 900px;
-  font-family: 'Roboto Condensed', sans-serif;
-  @media (min-width: 1000px) and (max-width:1260px) {
-    height: 700px;
-  }
-  @media screen and (max-width:1000px) {
-    height: 900px;
+  height: 750px;
+  font-family: 'Roboto', sans-serif;
+  @media screen and (max-width:580px) {
+    height: 780px;    
+  }   
+  .main-title{
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 40px;
+      line-height: 20px;
+      font-weight: 700;
+      margin-bottom: 0;
+      @media screen and (max-width:480px) {
+        font-size: 30px;
+      }      
   }
   .subtittle {
-    position: absolute;
-    bottom: 0;
-    z-index: 100;
-    color: #fff;
-    font-size: 25px;
-    left: 10%;
+    font-family: 'lobster';
+    font-size: 45px;
+    line-height: 30px;
+    margin: 0;
+    color:$text-black;
+    &:after {
+      content: '●●●●●●●●●●●●●●●●●';
+      color: black;
+      display: block;
+      font-size: 13px;
+      margin: 15px 0;
+      letter-spacing: 10px;
+    }
+   
+  }
+  p{
+    font-family: 'Roboto';
+    line-height: 13px;
+    font-size: 19px;
+    @media screen and (max-width:420px){
+      font-size: 17px;
+    }
   }
   .carousel-indicators {
+      padding-left: 0;
+      margin-right: 0; 
+      margin-left:  0;
+      flex: 1 1 auto;
+      list-style: none;    
+      margin-bottom: 0;
+      left: auto;
+      @media screen and (max-width:580px) {
+        position: static;
+        margin: 10px 0;
+      }        
     li {
       border-radius: 50%;
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       bottom: 0px;
       background-color: #fff;
       margin: 0 5px;
       &.active {
-        background-color: $lightgreen;
+        background-color: black;
       }
     }
   }
@@ -46,11 +81,12 @@
       }
     }
   }
-  .flex-row {
+  .flex-col {
     position: absolute;
-    top: 200px;
+    bottom: 0;
     left: 0;
     right: 0;
+    align-items: center;
     @media screen and (max-width: 992px) {
       flex-direction: column !important;
       align-items: center;
@@ -94,14 +130,13 @@
     }
   }
   &__contact {
-    max-width: 370px;
-    float: right;
+    justify-content: center;
+    text-align: center;
     &-header {
       background-color: $black-opacity;
       color: white;
       font-size: 23px;
       text-align: center;
-      padding: 10px;
       span {
         color: $lightgreen;
       }
@@ -115,38 +150,66 @@
       }
     }
     form {
+      margin:auto;
+      margin-top: 40px;
+      max-width: 450px;
+      position: relative;
       background-color: $lightgreen-opacity;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      box-sizing: border-box;      
+      h1{
+        text-transform: uppercase;
+        color:#fff;
+        font-weight: 600;
+        margin-bottom: 30px;
+        font-size: 28px;
+        @media screen and (max-width:480px) {
+          font-size: 25px;
+        }
+      }
+      &:before{
+        content: 'are you feeling emotionally drained?';
+        font-family: 'Lobster';
+        font-size: 30px;
+        color: $text-black;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: -30px;
+        @media screen and (max-width:480px) {
+          font-size: 20px;
+          top:-20px
+        }
+      }
       .wrapper {
         margin-bottom: 20px;
         input {
-          width: 100%;
+          width: 60%;
           padding: 10px 5px;
           text-align: center;
           color: black;
           border: 0;
+          text-transform: uppercase;
         }
         button {
-          width: 100%;
+          width: 60%;
           padding: 10px 5px;
           text-align: center;
           color: #fff;
-          background-color: black;
+          background-color: $text-black;
           text-transform: uppercase;
           border: 1px solid transparent;
           font-weight: 600;
           cursor: pointer;
+          span {
+            color: #fff;
+          }
           &:hover {
             background-color: transparent;
             color: white;
             border: 1px solid white;
-            span {
-              color: #fff;
-            }
-          }
-          span {
-            color: $lightgreen;
           }
         }
       }

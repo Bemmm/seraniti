@@ -1,13 +1,90 @@
 .footer{
-    padding: 40px;
+    padding: 40px ;
     text-align: center;
     background-color: $lightgreen;
-    display: flex;
-    justify-content: center;
+    font-family: 'Roboto', sans-serif !important;            
+    h1{
+        color:#fff;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .col-md-6{
+        @media screen and (max-width:850px){
+            width: 100% !important;
+            max-width: 100% !important;
+            text-align: center !important;
+            flex: auto;
+            margin-bottom: 25px;
+            
+        }
+    }
+    .contact-phone{
+        color:$text-black;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px 0;
+        display: inline-block;
+        &.left{
+            vertical-align: top;
+            &:before{
+                content:'';
+                background-image: url('../images/phone.png');
+                height:30px;
+                width:30px;
+                display: block;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                margin-right: 10px;
+                vertical-align: bottom;
+            }
+        }
+        &.white{
+            vertical-align: top;
+            color:#fff;
+            &:before{
+                content:'';
+                background-image: url('../images/phone_white.png');
+                height:30px;
+                width:30px;
+                display: block;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                margin-right: 10px;
+                vertical-align: bottom;
+            }
+        }        
+        &.right{
+            vertical-align: top;
+            &:after{
+                content:'';
+                background-image: url('../images/phone.png');
+                height:30px;
+                width:30px;
+                display: block;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                margin-left: 10px;
+                vertical-align: bottom;
+            }
+        }        
+    }
+    p{
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .flex-row{
+        @media screen and (max-width:850px){
+            justify-content: center;            
+        }        
+    }
     &__link{
-        margin: 0 50px;
+        margin: 0 15px;
         img{
-            height:30px;
+            height:25px;
         }
     }
 
