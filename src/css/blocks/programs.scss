@@ -14,9 +14,17 @@
         position: relative;
         padding-bottom: 20px;
         &-item{
-            padding: 0 30px;
+            padding: 0 !important;
             @media screen and (max-width:768px) {
                 margin: 40px 0; 
+            }
+            &:last-child &-wrap{
+                border:0 !important;
+            }             
+            &-wrap{
+                border-right: 1px solid black;
+                padding: 0 15px;
+               
             }         
             h3{
                 color: $text-black;

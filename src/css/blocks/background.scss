@@ -3,11 +3,20 @@
   background-position: top center;
   background-size: cover;
   position: relative;
-  height: 750px;
+  height: 800px;
   font-family: 'Roboto', sans-serif;
-  @media screen and (max-width:580px) {
-    height: 780px;    
-  }   
+  @media (min-width:992px) and (max-width:1200px) {
+    height: 730px;    
+  }
+  @media (min-width:767px) and (max-width:991px) {
+    height: 730px;    
+  }
+  @media (min-width:480px) and (max-width:766px) {
+    height: 730px;    
+  }  
+  @media (min-width:320px) and (max-width:479px) {
+    height: 730px;    
+  }  
   .main-title{
       text-transform: uppercase;
       color: #fff;
@@ -15,6 +24,9 @@
       line-height: 20px;
       font-weight: 700;
       margin-bottom: 0;
+      text-shadow: 0 2px 3px dimgrey;
+      position: relative;
+      z-index: 10;
       @media screen and (max-width:480px) {
         font-size: 30px;
       }      
@@ -74,7 +86,7 @@
       height: 100%;
       img {
         width: 100%;
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
           width: auto;
           height: 100%;
         }
@@ -100,7 +112,7 @@
     right: 0;
     &-logo {
       img {
-        max-height: 150px;
+        max-height: 100px;
       }
     }
   }

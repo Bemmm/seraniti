@@ -2,16 +2,7 @@
     padding: 25px 10px;
     font-family: 'Roboto', sans-serif;            
     position: relative;
-    &:before{
-        content:'';
-        z-index: 0;
-        position: absolute;
-        background: $lightgreen-opacity;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
+    background: $lightgreen;
     .title{
         z-index: 1;
         position: relative;
